@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Live Site](https://6bed4e8c.fem-qr-code-component-8ie.pages.dev/)
+- Solution URL: [Live Site](https://fem-nicolienschutte.pages.dev/src/challenges/stats_preview_card/)
 - GitHub Repository: [Repo](https://github.com/NicolienSchutte/FrontEndChallenges/tree/main/src/challenges/stats_preview_card)
   
 
