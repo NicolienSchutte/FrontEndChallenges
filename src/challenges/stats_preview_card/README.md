@@ -21,15 +21,15 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot
-- Desktop View: 
-![Desktop Preview](./Desktop.jpg)
+![Desktop Version](./Desktop.jpg)
+![Mobile Version](./Mobile.jpg)
 
-- Mobile View: 
-![Mobile Preview](./Mobile.jpg)
 
 ### Links
-- Solution URL: [GitHub Repo](https://github.com/NicolienSchutte/FrontEndChallenges/tree/main/stats_preview_card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+- Solution URL: [Live Site](https://6bed4e8c.fem-qr-code-component-8ie.pages.dev/)
+- GitHub Repository: [Repo](https://github.com/NicolienSchutte/FrontEndChallenges/tree/main/src/challenges/stats_preview_card)
+  
 
 ## My process
 
