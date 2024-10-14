@@ -27,7 +27,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Solution URL: [Live Site](https://6bed4e8c.fem-qr-code-component-8ie.pages.dev/)
-- GitHub Repository: [Repo](https://github.com/NicolienSchutte/FEM-QR-Code-Component.git)
+- GitHub Repository: [Repo](https://github.com/NicolienSchutte/FrontEndChallenges/tree/main/src/challenges/fem_qr_code_component)
 
 
 ## My process
