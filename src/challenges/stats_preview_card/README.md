@@ -21,11 +21,14 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot
+- Desktop View: 
 ![Desktop Preview](./Desktop.jpg)
+
+- Mobile View: 
 ![Mobile Preview](./Mobile.jpg)
 
 ### Links
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [GitHub Repo](https://github.com/NicolienSchutte/FrontEndChallenges/tree/main/stats_preview_card)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -42,5 +45,5 @@ Users should be able to:
   
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/NicolienSchutte)
+- Frontend Mentor - [@NicolienSchutte](https://www.frontendmentor.io/profile/NicolienSchutte)
 
