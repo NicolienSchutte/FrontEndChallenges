@@ -1,0 +1,276 @@
+:root {
+    --hero-image: url("../assets/images/hero-mobile.jpg");
+    --pr-pink: hsl(0, 36%, 70%);
+    --pr-red: hsl(2, 95%, 70%);
+    --ne-gray: hsl(353, 7%, 25%);
+    --ne-br-gray: rgb(65, 58, 58);
+    --gr-white: linear-gradient(135deg, hsl(0, 72%, 90%), hsl(359, 79%, 89%));
+    --gr-pink: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    --pr-bg-pink: rgb(255,248,249);
+    --pr-bg-red: rgb(255,245,244);
+}
+
+.josefin-sans-300 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.josefin-sans-400 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.josefin-sans-600 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hero {
+    background-image: var(--hero-image);
+    background-size: cover;
+    background-position: top center;
+    min-height: 300px;
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        min-height: 100vh;
+    }
+}
+
+/* -------------------------------
+   Layout (Mobile First)
+---------------------------------*/
+body {
+    background-color: white;
+    max-width: 100vw;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "image"
+        "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-area: logo;
+    margin: 1.5rem;
+}
+
+section {
+    grid-area: content;
+    padding: 2rem;
+}
+
+figure {
+    grid-area: image;
+}
+
+/* -------------------------------
+   Typography
+---------------------------------*/
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 7vh;
+    letter-spacing: 2vh;
+    color: var(--pr-pink);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 span {
+    font-weight: 600;
+    color: var(--ne-gray);
+    line-height: 3rem;
+}
+
+p {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: var(--pr-pink);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+a {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: var(--pr-red);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+form {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    color: var(--pr-pink);
+}
+
+/* -------------------------------
+   Form Styling
+---------------------------------*/
+form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1.5rem;
+    border: 1px solid var(--pr-pink);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--ne-gray);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:placeholder {
+    opacity: 0.5;
+}
+
+input[type="email"]:focus {
+    border-color: var(--ne-gray);
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    background: var(--gr-pink);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+button:hover,
+button:focus {
+    background: var(--gr-white);
+}
+
+.error-msg {
+    display: none;
+    color: var(--pr-red);
+    font-size: 0.875rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;    
+    margin-top: 0.5rem;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1.5rem;
+    z-index: 10;
+}
+
+.error-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+input.invalid {
+  border-color: var(--pr-red);
+}
+
+/* -------------------------------
+   Desktop View
+---------------------------------*/
+@media (min-width: 1440px) {
+    :root {
+        --hero-image: url("../assets/images/hero-desktop.jpg");
+    }
+
+    main {
+        grid-template-areas:
+            "logo   image"
+            "content image";
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto 1fr;
+        min-height: 100vh;
+    }
+
+    header {
+        margin: 4rem 12rem 0rem 14rem;
+    }
+    section {
+        margin: 2rem 12rem 0rem 12rem;
+    }
+    form {
+        margin: 4rem 0rem 0rem 0rem;
+    }
+
+    h1 {
+        font-size: 12vh;
+        letter-spacing: 4vh;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+    body {
+    background: radial-gradient(circle at center bottom,
+        white 0%, 
+        white 33%, 
+        var(--pr-bg-pink) 33%, 
+        var(--pr-bg-pink) 66%, 
+        var(--pr-bg-red) 66%, 
+        var(--pr-bg-red) 100%);
+    }
+
+    button {
+        padding: 1rem 2.5rem;
+    }
+}
+
+/* -------------------------------
+   Accessibility Utilities
+---------------------------------*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* -------------------------------
+   Footer
+---------------------------------*/
+.attribution {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--pr-pink);
+}
+
+.attribution a {
+    color: var(--ne-gray);
+}

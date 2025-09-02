@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A brief description of the webpage for SEO.">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Link the reset.css  -->
+  <link rel="stylesheet" href="styles/reset.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Open Graph meta tags for social media previews -->
+  <meta property="og:title" content="Frontend Mentor | Base Apparel coming soon page">
+  <meta property="og:description" content="A responsive component solution for the challenge from Frontend Mentor.">
+  <meta property="og:image" content="./preview.jpg">
+
+</head>
+
+<body>
+  <main>
+    <header>
+      <img src="./assets/images/logo.svg" alt="Base Apparel Logo">
+    </header>
+
+    <section>
+      <h1>We're <br><span>coming<br>soon</span></h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form>
+        <label for="email" class="visually-hidden">Email Address</label>
+        <div class="input-wrapper">
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Email Address"
+            autocomplete="email" 
+            required>
+          <img src="./assets/images/icon-error.svg" alt="" class="error-icon" aria-hidden="true">
+        </div>
+        <button type="submit" title="Submit">
+          <img src="./assets/images/icon-arrow.svg" alt="">
+        </button>
+        <span class="error-msg" aria-live="polite"></span>
+      </form>
+    </section>
+
+    <figure class="hero"></figure>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br>
+      Coded by <a href="https://www.frontendmentor.io/profile/NicolienSchutte" target="_blank">Nicolien Schutte</a></p>
+    </div>
+      <div class="my-6 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <p>Frontend Mentor Challenge || Base Apparel coming soon page<br><a href="../../../../index.html">Show Case</a></p>        
+      </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
