@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/NicolienSchutte/FrontEndChallenges/tree/main/src/challenges/base_apparel_coming_soon)
-- Live Site URL: [](https://fem-nicolienschutte.pages.dev/src/challenges/base_apparel_coming_soon/)
+- Solution URL: [Here](https://github.com/NicolienSchutte/FrontEndChallenges/tree/main/src/challenges/base_apparel_coming_soon)
+- Live Site URL: [Here](https://fem-nicolienschutte.pages.dev/src/challenges/base_apparel_coming_soon/)
 
 ## My process
 
